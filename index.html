@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NAGASAKI AI/DX CONNECT 2026</title>
   <meta name="description" content="AI/DXスタートアップと長崎の地元企業をつなぐマッチングイベント。2026年7月開催。">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -803,6 +803,234 @@
       color: #4a2e38;
     }
 
+    /* ===== Speakers ===== */
+    .speakers {
+      padding: 140px 0;
+      position: relative;
+    }
+
+    .speakers-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .speakers-header .section-lead {
+      margin: 0 auto;
+    }
+
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .speaker-card {
+      padding: 36px 28px;
+      background: rgba(233, 106, 151, 0.03);
+      border: 1px solid rgba(233, 106, 151, 0.08);
+      border-radius: 24px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .speaker-card:hover {
+      border-color: rgba(233, 106, 151, 0.3);
+      transform: translateY(-6px);
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+    }
+
+    .speaker-icon {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .speaker-icon img {
+      max-height: 40px;
+      max-width: 160px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .speaker-category {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+
+    .cat-work { color: #4db8a4; background: rgba(77, 184, 164, 0.1); }
+    .cat-ai   { color: #E96A97; background: rgba(233, 106, 151, 0.1); }
+    .cat-hr   { color: #a78bfa; background: rgba(167, 139, 250, 0.1); }
+
+    .speaker-name {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .speaker-company {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.35);
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .speaker-desc {
+      font-size: 0.85rem;
+      color: #b89aa5;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .speakers { padding: 100px 0; }
+      .speakers-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== Track Record ===== */
+    .track-record {
+      padding: 120px 0;
+      position: relative;
+    }
+
+    .track-record-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .track-record-header .section-lead {
+      margin: 0 auto;
+    }
+
+    .track-record-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .track-record-card {
+      padding: 32px 24px;
+      background: rgba(233, 106, 151, 0.03);
+      border: 1px solid rgba(233, 106, 151, 0.07);
+      border-radius: 20px;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .track-record-card:hover {
+      border-color: rgba(233, 106, 151, 0.25);
+      transform: translateY(-4px);
+    }
+
+    .track-record-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+      color: #E96A97;
+      background: rgba(233, 106, 151, 0.1);
+      border: 1px solid rgba(233, 106, 151, 0.2);
+    }
+
+    .track-record-company {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .track-record-desc {
+      font-size: 0.85rem;
+      color: #b89aa5;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .track-record-result {
+      font-size: 0.8rem;
+      color: #E96A97;
+      font-weight: 500;
+      padding-top: 12px;
+      border-top: 1px solid rgba(233, 106, 151, 0.08);
+    }
+
+    @media (max-width: 768px) {
+      .track-record { padding: 80px 0; }
+      .track-record-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== Organizers ===== */
+    .organizers {
+      padding: 80px 0;
+      border-top: 1px solid rgba(233, 106, 151, 0.07);
+      border-bottom: 1px solid rgba(233, 106, 151, 0.07);
+    }
+
+    .organizers-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+    }
+
+    .organizers-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .organizers-role {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #E96A97;
+    }
+
+    .organizers-logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px 32px;
+      min-width: 240px;
+      min-height: 100px;
+    }
+
+    .organizers-logo-wrap img {
+      max-height: 80px;
+      width: auto;
+      max-width: 200px;
+    }
+
+    .organizers-logo-text {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      letter-spacing: 0.02em;
+    }
+
+    .organizers-divider {
+      width: 1px;
+      height: 120px;
+      background: rgba(233, 106, 151, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      .organizers-inner { flex-direction: column; gap: 48px; }
+      .organizers-divider { width: 120px; height: 1px; }
+    }
+
     /* ===== Mobile Responsive ===== */
     @media (max-width: 768px) {
       .header-nav {
@@ -932,6 +1160,8 @@
       <a href="#" class="header-logo"><span>NAGASAKI AI/DX CONNECT</span></a>
       <nav class="header-nav" id="headerNav">
         <a href="#about">About</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#track-record">Track Record</a>
         <a href="#program">Program</a>
         <a href="#outline">Outline</a>
         <a href="#entry" class="btn-primary">参加申込</a>
@@ -1015,6 +1245,71 @@
             <h3 class="about-feature-title">交流会・マッチング</h3>
             <p class="about-feature-desc">スタートアップと地元企業が直接対話し、具体的なビジネス連携の可能性を探る。</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Speakers ===== -->
+  <section class="speakers" id="speakers">
+    <div class="container">
+      <div class="speakers-header fade-up">
+        <span class="section-label">Speakers</span>
+        <h2 class="section-title">登壇・ピッチ企業</h2>
+        <p class="section-lead">AI/DX領域で革新的なサービスを展開する注目スタートアップが登壇します。</p>
+      </div>
+      <div class="speakers-grid">
+        <div class="speaker-card fade-up">
+          <div class="speaker-icon"><img src="https://timee.co.jp/_assets/reHeader-logo.DCBMN3ti.svg" alt="タイミー ロゴ"></div>
+          <span class="speaker-category cat-work">WorkTech</span>
+          <h3 class="speaker-name">タイミー</h3>
+          <p class="speaker-company">株式会社タイミー（東証グロース上場）</p>
+          <p class="speaker-desc">働きたい時間と働いてほしい時間をマッチングするスキマバイトサービス。面接・履歴書なしで即日働ける仕組みを提供し、ユーザー数700万人超、導入事業者数98,000社超の実績を持つ。</p>
+        </div>
+        <div class="speaker-card fade-up">
+          <div class="speaker-icon"><img src="https://zeals.ai/jp/wp-content/themes/zeals2021-child/assets/images/logo_zeals_white.svg" alt="ZEALS ロゴ"></div>
+          <span class="speaker-category cat-ai">AI Chat</span>
+          <h3 class="speaker-name">ZEALS</h3>
+          <p class="speaker-company">株式会社ZEALS（ジールス）</p>
+          <p class="speaker-desc">LINEやInstagramなどのチャットインターフェースを活用し、生成AIによる接客体験のデジタル化を推進。AIエージェント事業およびチャットコマース事業を展開し、エンタープライズ企業を中心に400社以上に導入。</p>
+        </div>
+        <div class="speaker-card fade-up">
+          <div class="speaker-icon"><img src="https://storage.googleapis.com/production-os-assets/assets/1e0cab76-faf7-4a27-8361-d1d6e050c793" alt="ABABA ロゴ"></div>
+          <span class="speaker-category cat-hr">HRTech</span>
+          <h3 class="speaker-name">ABABA</h3>
+          <p class="speaker-company">株式会社ABABA</p>
+          <p class="speaker-desc">就職活動の「過程」を評価するHRTechスタートアップ。最終面接まで進んだ就活生に他企業からスカウトが届く新卒採用プラットフォームを運営。AI面接サービス「REALME」も展開。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Track Record ===== -->
+  <section class="track-record" id="track-record">
+    <div class="container">
+      <div class="track-record-header fade-up">
+        <span class="section-label">Track Record</span>
+        <h2 class="section-title">F Venturesのマッチング実績</h2>
+        <p class="section-lead">これまでF Venturesは都内のAI/DXスタートアップを長崎の地元経営者にマッチングし、多くの事業連携を実現してきました。</p>
+      </div>
+      <div class="track-record-grid">
+        <div class="track-record-card fade-up">
+          <span class="track-record-tag">WorkTech × 地方企業</span>
+          <h3 class="track-record-company">株式会社タイミー</h3>
+          <p class="track-record-desc">スキマバイトマッチングサービス「タイミー」を長崎の地元企業に紹介。飲食・小売・物流など幅広い業種で人手不足の課題解決に貢献し、長崎エリアでの導入企業拡大を支援。</p>
+          <p class="track-record-result">長崎エリアの地元企業への導入・マッチングを推進</p>
+        </div>
+        <div class="track-record-card fade-up">
+          <span class="track-record-tag">AI Chat × 地方企業</span>
+          <h3 class="track-record-company">株式会社ZEALS（ジールス）</h3>
+          <p class="track-record-desc">AIチャットコマースによる接客DXを長崎の地元企業へ展開。LINEを活用した顧客コミュニケーションの自動化・最適化により、地方企業のデジタル接客導入を推進。</p>
+          <p class="track-record-result">長崎の地元経営者とのマッチング・事業連携を実現</p>
+        </div>
+        <div class="track-record-card fade-up">
+          <span class="track-record-tag">HRTech × 地方企業</span>
+          <h3 class="track-record-company">株式会社ABABA</h3>
+          <p class="track-record-desc">新卒採用プラットフォーム「ABABA」を長崎の地元企業へ紹介。就活の過程を評価する独自の仕組みにより、地方企業の採用力強化と優秀な学生のマッチングを支援。</p>
+          <p class="track-record-result">長崎エリアの企業採用DX推進に貢献</p>
         </div>
       </div>
     </div>
@@ -1106,7 +1401,11 @@
           </div>
           <div class="outline-row">
             <div class="outline-label">主催</div>
-            <div class="outline-value">F Ventures / 十八親和銀行</div>
+            <div class="outline-value">F Ventures</div>
+          </div>
+          <div class="outline-row">
+            <div class="outline-label">共催</div>
+            <div class="outline-value">十八親和銀行</div>
           </div>
           <div class="outline-row">
             <div class="outline-label">参加費</div>
@@ -1124,6 +1423,27 @@
           <div class="outline-row">
             <div class="outline-label">定員</div>
             <div class="outline-value">40名（先着順）</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Organizers ===== -->
+  <section class="organizers">
+    <div class="container">
+      <div class="organizers-inner fade-up">
+        <div class="organizers-block">
+          <div class="organizers-role">主催</div>
+          <div class="organizers-logo-wrap">
+            <img src="f-ventures-logo.png" alt="F Ventures">
+          </div>
+        </div>
+        <div class="organizers-divider"></div>
+        <div class="organizers-block">
+          <div class="organizers-role">共催</div>
+          <div class="organizers-logo-wrap organizers-logo-text">
+            十八親和銀行
           </div>
         </div>
       </div>
@@ -1149,12 +1469,12 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo"><span>NAGASAKI AI/DX CONNECT</span></div>
-          <p class="footer-desc">AI/DXスタートアップと長崎の地元企業をつなぐマッチングイベント。F Venturesと十八親和銀行の共催でお届けします。</p>
+          <p class="footer-desc">AI/DXスタートアップと長崎の地元企業をつなぐマッチングイベント。主催：F Ventures、共催：十八親和銀行。</p>
         </div>
         <div class="footer-contact">
           <h4 class="footer-heading">Contact</h4>
           <p>イベントに関するお問い合わせは<br>下記までご連絡ください。</p>
-          <p>主催：F Ventures / 十八親和銀行</p>
+          <p>主催：F Ventures<br>共催：十八親和銀行</p>
         </div>
       </div>
       <div class="footer-bottom">
